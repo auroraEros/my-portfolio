@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useDarkMode } from "../contexts/DarkModeContext";
 
 export function useStars() {
   const [stars, setStars] = useState([]);
+  const { isDarkMode } = useDarkMode();
   function generateStars() {
     const numOfStars =
       Math.floor(window.innerWidth * window.innerHeight) / 10000;
@@ -13,9 +15,11 @@ export function useStars() {
         size: Math.random() * 3 + 1,
         x: Math.random() * 100,
         y: Math.random() * 100,
-        opacity: Math.random() * 0.5 + 0.5,
+        opacity: isDarkMode
+          ? Math.random() * 0.5 + 0.5
+          : Math.random() * 0.7 + 0.3,
+        color: !isDarkMode && ` hsl(190, 100%, 60%)`,
         animationDuration: Math.random() * 4 + 2,
-        blur: Math.random() * 1.2 + 0.3,
       });
 
       setStars(newStars);

@@ -1,4 +1,7 @@
+import { useDarkMode } from "../contexts/DarkModeContext";
+
 function Meteor({ meteor }) {
+  const { isDarkMode } = useDarkMode();
   return (
     <div
       className="meteor animate-meteor"
@@ -7,6 +10,7 @@ function Meteor({ meteor }) {
         height: meteor.size * 2 + "px",
         left: `${meteor.x}%`,
         top: `${meteor.y}%`,
+        background: !isDarkMode && meteor.color,
         animationDelay: `${meteor.delay}s`,
         animationDuration: `${meteor.animationDuration}s`,
       }}
