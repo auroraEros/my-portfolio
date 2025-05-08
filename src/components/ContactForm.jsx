@@ -45,7 +45,7 @@ function ContactForm() {
 
   return (
     <form
-      action="https://formsubmit.co/sahar.javadi.h@gmail.com"
+      action="https://formsubmit.co/8be8bb146805d4fb6d0b4a25463fe403"
       method="POST"
       onSubmit={handleSubmit}
       className="space-y-6"
