@@ -18,7 +18,7 @@ export function useStars() {
         opacity: isDarkMode
           ? Math.random() * 0.5 + 0.5
           : Math.random() * 0.7 + 0.3,
-        color: !isDarkMode && ` hsl(190, 100%, 60%)`,
+        color: !isDarkMode && `hsl(${Math.random() * 30 + 20}, 40%, 85%)`,
         animationDuration: Math.random() * 4 + 2,
       });
 

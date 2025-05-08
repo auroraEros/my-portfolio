@@ -1,4 +1,4 @@
-import { MoonIcon, SunIcon } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useDarkMode } from "../contexts/DarkModeContext";
 import { cn } from "../lib/utils";
 
@@ -9,14 +9,14 @@ function DarkModeToggle() {
     <button
       onClick={toggleDarkMode}
       className={cn(
-        "absolute max-sm:hidden p-2 z-50 top-5 right-5 rounded-full",
-         "transition-colors duration-300 focus:outline-hidden"
+        "max-sm:hidden rounded-full transition-colors duration-300",
+        "focus:outlin-hidden"
       )}
     >
       {isDarkMode ? (
-        <SunIcon className="w-6 h-6 text-yellow-300" />
+        <Sun className="w-5 h-5 stroke-yellow-300" />
       ) : (
-        <MoonIcon className="w-6 h-6 text-blue-900" />
+        <Moon className="w-5 h-5 stroke-blue-900" />
       )}
     </button>
   );
