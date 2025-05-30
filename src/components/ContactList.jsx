@@ -9,9 +9,9 @@ const contactInfo = [
     icon: <Mail className="w-6 h-6 text-primary" />,
   },
   {
-    title: "Phone",
-    text: "+98 (912) 260-2818",
-    href: "tel:+989122602818",
+    title: "WhatsApp",
+    text: "Contact with me",
+    href: "https://wa.me/989122602818",
     icon: <Phone className="h-6 w-6 text-primary" />,
   },
   {

@@ -6,6 +6,8 @@ function ContactInfo({ children, href, title, text }) {
         <h4 className="font-medium">{title}</h4>
         <a
           href={href}
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-muted-forground hover:text-primary transition-colors duration-300"
         >
           {text}
