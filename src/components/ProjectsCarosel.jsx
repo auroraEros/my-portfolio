@@ -37,9 +37,9 @@ const ProjectsCarousel = ({ projects }) => {
     );
   }
 
-  // Desktop version 
+  // Desktop version
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8">
       {projects.map((project, key) => (
         <ProjectCard project={project} key={key} />
       ))}
@@ -48,3 +48,4 @@ const ProjectsCarousel = ({ projects }) => {
 };
 
 export default ProjectsCarousel;
+// grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8
