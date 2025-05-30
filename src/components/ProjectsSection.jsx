@@ -7,7 +7,7 @@ import { capitalize } from "../helpers/capitalizeText";
 
 function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState("all");
-  const categories = ["react.js", "next.js", "javaScript", "html&Css"];
+  const categories = ["all","react.js", "next.js", "javaScript", "html&Css"];
   const selectedProjects =
     activeCategory === "all"
       ? projects

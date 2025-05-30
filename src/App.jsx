@@ -14,7 +14,6 @@ function App() {
           top: "1.5rem",
         }}
         toastOptions={{
-          // برای همه حالت‌ها (success/error/loading)
           common: {
             duration: 5000,
             textAlign: "center",
