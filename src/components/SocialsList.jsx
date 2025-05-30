@@ -10,7 +10,7 @@ function SocialsList() {
   return (
     <div className="flex space-x-4 justify-center">
       <a
-        href="https://www.linkedin.com/in/sahar-javadi-7000b2214/"
+        href="https://www.linkedin.com/in/sahar-javadi/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-muted-forground hover:text-primary transition-colors duration-300"
